@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的css</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      font-size: 15px;
+    }
+
+    .efchp .head {
+      height: 50px;
+      line-height: 50px;
+      font-size: 30px;
+      font-weight: bold;
+      text-align: center;
+      color: white;
+      background: blue;
+    }
+
+    .efchp .list {
+      padding: 5px;
+    }
+
+    .efchp .list .item {
+      width: 100%;
+      background: lightblue;
+      padding: 5px;
+      box-sizing: border-box;
+    }
+
+    .efchp .list .item:hover {
+      color: white;
+      background: blue;
+    }
+
+    .efchp .list .item .title {
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 35px;
+    }
+
+    .efchp .list .item .foot {
+      text-align: right;
+    }
+
+    .efchp .form {
+      padding: 5px;
+    }
+
+    .efchp .form .item {
+      display: flex;
+      margin: 5px 0;
+    }
+
+    .efchp .form .item .label {
+      flex: 2;
+      height: 20px;
+      line-height: 20px;
+    }
+
+    .efchp .form .item .content {
+      flex: 8;
+    }
+
+    .efchp .form .item .input {
+      flex: 8;
+    }
+
+    .efchp .form .item .input input {
+      width: 100%;
+      height: 20px;
+      line-height: 20px;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid lightblue;
+    }
+
+    .efchp .form .item .input input:hover {
+      border-bottom: 1px solid blue;
+    }
+
+    .efchp .form .item .input textarea {
+      width: 100%;
+      height: 60px;
+      border: 0;
+      border-bottom: 1px solid lightblue;
+      outline: 0;
+      box-sizing: border-box;
+      resize: vertical;
+    }
+
+    .efchp .form .item .input textarea:hover {
+      border: 1px solid blue;
+    }
+
+    .efchp .form .item .input select {
+      width: 100%;
+      outline: none;
+      border: none;
+    }
+
+    .efchp .form .button {
+      text-align: right;
+    }
+
+    .efchp .form .button .item {
+      display: inline-block;
+      outline: none;
+      border: none;
+      background: lightblue;
+      width: 80px;
+      height: 30px;
+      line-height: 30px;
+      text-align: center;
+    }
+
+    .efchp .form .button .item:hover {
+      background: blue;
+      color: white;
+    }
+
+    .efchp .add {
+      position: fixed;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      text-align: center;
+      height: 50px;
+      line-height: 50px;
+      border-radius: 50%;
+      background: lightblue;
+      margin: 5px;
+    }
+
+    .efchp .add:hover {
+      background: blue;
+      color: white;
+    }
+
+    .efchp .select {
+      width: 100%;
+    }
+
+    .efchp .select select {
+      width: 100%;
+      height: 50px;
+      text-align: center;
+      outline: none;
+      border: 1px solid lightblue;
+      font-size: 30px;
+    }
+
+    .efchp .select select:hover {
+      border: 1px solid blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="efchp">
+    <div class="head">
+      标题
+    </div>
+    <div class="select">
+      <select>
+        <option>选项1</option>
+        <option>选项2</option>
+        <option>选项3</option>
+      </select>
+    </div>
+    <div class="list">
+      <div class="item">
+        <div class="title">
+          标题
+        </div>
+        <div class="description">
+          简介
+        </div>
+        <div class="foot">
+          足底
+        </div>
+      </div>
+    </div>
+    <div class="form">
+      <div class="item">
+        <div class="label">标题</div>
+        <div class="content">666</div>
+      </div>
+      <div class="item">
+        <div class="label">
+          输入框
+        </div>
+        <div class="input">
+          <input type="text" />
+        </div>
+      </div>
+      <div class="item">
+        <div class="label">
+          输入区域
+        </div>
+        <div class="input">
+          <textarea></textarea>
+        </div>
+      </div>
+      <div class="item">
+        <div class="label">
+          下拉选项
+        </div>
+        <div class="input">
+          <select>
+            <option>选项1</option>
+            <option>选项2</option>
+            <option>选项3</option>
+          </select>
+        </div>
+      </div>
+      <div class="button">
+        <div class="item">提交</div>
+      </div>
+    </div>
+    <div class="add">+</div>
+  </div>
+</body>
+
+</html>
